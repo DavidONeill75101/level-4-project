@@ -19,5 +19,5 @@
 
 ### 01 Oct 2021
 
-- _0.5 hour_ initialised repository and set up some useful directories
+- _2 hours_ initialised repository and set up some useful directories with templates for future files
 - _2 hours_ began reading and critiquing research papers gathered yesterday
