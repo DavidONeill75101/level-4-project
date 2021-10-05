@@ -21,3 +21,14 @@
 
 - _2 hours_ initialised repository and set up some useful directories with templates for future files
 - _2 hours_ began reading and critiquing research papers gathered yesterday
+
+## Week 3
+
+### 04 Oct 2021
+
+- _1 hour_ worked through stage two of the pyterrier tutorial on google colab
+
+### 05 Oct 2021
+
+- _1 hour_ worked through stage three of the pyterrier tutorial on google colab
+- _2 hours_ read and annotated research papers regarding solutions to the TREC-COVID challenge
