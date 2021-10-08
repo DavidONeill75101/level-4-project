@@ -31,4 +31,18 @@
 ### 05 Oct 2021
 
 - _1 hour_ worked through stage three of the pyterrier tutorial on google colab
-- _2 hours_ read and annotated research papers regarding solutions to the TREC-COVID challenge
+- _3 hours_ read and annotated research papers regarding solutions to the TREC-COVID challenge
+
+### 06 Oct 2021
+
+- _0.5 hour_ meeting with supervisor to discuss research progress
+- _0.5 hour_ writing up meeting minutes and creating plan for following week
+
+### 07 Oct 2021
+
+- _1 hour_ working on pyterrier tutorial to learn about DeepCT and Doc2Query
+- _3 hours_ reading research papers and putting my ideas into a brainstorming document
+
+### 08 Oct 2021
+
+- _5 hours_ worked on a python notebook simply trying things out with the coronacentral data, different indexing to see what works well
