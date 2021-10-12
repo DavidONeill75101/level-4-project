@@ -46,3 +46,10 @@
 ### 08 Oct 2021
 
 - _5 hours_ worked on a python notebook simply trying things out with the coronacentral data, different indexing to see what works well
+
+## Week 4
+
+### 12 Oct 2021
+
+- _3 hours_ read and summarised more research papers, specifically looking into the reranking stage
+- _1 hour_ collated all research papers so far into a narrative which can be followed for my literature review
