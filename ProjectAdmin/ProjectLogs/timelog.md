@@ -53,3 +53,12 @@
 
 - _3 hours_ read and summarised more research papers, specifically looking into the reranking stage
 - _1 hour_ collated all research papers so far into a narrative which can be followed for my literature review
+
+### 13 Oct 2021
+
+- _0.5 hour_ supervisor meeting
+- _0.5 hour_ writing minutes and reviewing meeting
+
+### 14 Oct 2021
+
+- _5 hours_ worked on a python notebook, checking out how irrelevant background info on covid affects the results and also how altmetrics are related to document relevance.
