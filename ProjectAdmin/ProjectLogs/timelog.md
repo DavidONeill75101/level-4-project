@@ -62,3 +62,18 @@
 ### 14 Oct 2021
 
 - _5 hours_ worked on a python notebook, checking out how irrelevant background info on covid affects the results and also how altmetrics are related to document relevance.
+
+### 15 Oct 2021
+
+- _5 hours_ worked on a python notebook, checking out how the filtering of dates etc will affect the retrieval
+
+## Week 5
+
+### 18 Oct 2021
+
+- _0.5 hour_ reading over hall of fames dissertations from previous years, to consider how I should be writing a literature review.
+
+### 19 Oct 2021
+
+- _2.5 hours_ writing draft literature review
+- _2 hours_ experimenting on colab
