@@ -77,3 +77,71 @@
 
 - _2.5 hours_ writing draft literature review
 - _2 hours_ experimenting on colab
+
+### 20 Oct 2021
+
+- _0.5 hour_ project meeting
+- _1 hour_ writing minutes and experimenting on colab
+
+### 21 Oct 2021
+
+- _0.5 hour_ date experimentation on colab
+
+### 22 Oct 2021
+
+- _5 hours_ experimenting with date filtering on colab
+- _1 hour_ writing up everything I have been looking into
+
+## Week 6
+
+### 27 Oct 2021
+
+- _0.5 hour_ project meeting
+- _0.5 hour_ reviewing meeting and writing up minutes
+
+### 28 Oct 2021
+
+- _7 hours_ working on benchmark experiments for coronacentral retrieval
+
+## Week 7
+
+### 03 Nov 2021
+
+- _0.5 hour_ supervisor meeting
+- _0.5 hour_ writing up minutes
+
+### 04 Nov 2021
+
+- _3.5 hours_ further literature research and writing up literature review
+- _2.5 hours_ experimenting with different ways of filtering down the dataset
+
+### 05 Nov 2021
+
+- _3 hours_ analysing the CoronaCentral metadata
+- _3 hours_ further research and write up of literature review
+
+## Week 8
+
+### 10 Nov 2021
+
+- _1 hour_ meeting and writing minutes
+
+### 11 Nov 2021
+
+- _3 hours_ experimenting with the false positives/negatives
+- _3 hours_ experimenting with the performance for different queries
+
+### 12 Nov 2021
+
+- _3 hours_ analysing the filtering of the dataset
+- _3 hours_ building the web scraper to look at coronacentral
+
+## Week 9
+
+### 15 Nov 2021
+
+- _1 hour_ building a system to mimic the current CoronaCentral Search Tool
+
+### 16 Nov 2021
+
+- _2 hours_ testing and evaluating the current CoronaCentral search tool
