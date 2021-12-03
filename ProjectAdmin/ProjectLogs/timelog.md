@@ -145,3 +145,43 @@
 ### 16 Nov 2021
 
 - _2 hours_ testing and evaluating the current CoronaCentral search tool
+
+### 18 Nov 2021
+
+- _0.5 hour_ supervisor meeting
+- _0.5 hour_ writing up minutes from meeting
+
+### 19 Nov 2021
+
+- _2 hours_ building Flask app to provide search functionality
+
+## Week 10
+
+### 22 Nov 2021
+
+- _2 hours_ working on collating some plots from the CoronaCentral logs
+
+### 24 Nov 2021
+
+- _5 hours_ working on the search api for the IR tool
+
+### 25 Nov 2021
+
+- _2 hours_ fixing bug when accessing document index locally
+
+### 26 Nov 2021
+
+- _3 hours_ working on the search API and researching front-end options
+- _3 hours_ working on the classification of queries and analysing the most sought after topics
+
+## Week 11
+
+### 30 Nov 2021
+
+- _2 hours_ working on the search API front-end
+
+### 1 Dec 2021
+
+- _2 hours_ making the front-end functional for demonstration at meeting
+- _0.5 hour_ supervisor meeting
+- _0.5 hour_ writing up minutes from meeting
