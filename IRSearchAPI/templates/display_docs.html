@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Query - {{ query }}</title>
+    </head>
+    <body>
+        <h1>Query - {{ query }}</h1>
+        {% for document in documents %}
+            <h3>Title - {{ document.title }}</h3>
+            <h4>Abstract - {{ document.abstract }}</h4>
+            <h4>Altmetric - {{ document.score }}</h4>
+            <hr>
+        {% endfor %}
+    </body>
+</html>
