@@ -185,3 +185,15 @@
 - _2 hours_ making the front-end functional for demonstration at meeting
 - _0.5 hour_ supervisor meeting
 - _0.5 hour_ writing up minutes from meeting
+
+## Week 17
+
+### 10 Jan 2021
+
+- _2 hours_ reading over material so far to re-familiarise myself with the project
+
+### 11 Jan 2021
+
+- _1 hour_ preparing for supervisor meeting by writing status report
+- _1 hour_ tidying up git repository and adding new notebooks
+- _1 hour_ experimenting with neural reranking
