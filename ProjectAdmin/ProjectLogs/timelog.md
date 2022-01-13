@@ -188,12 +188,22 @@
 
 ## Week 17
 
-### 10 Jan 2021
+### 10 Jan 2022
 
 - _2 hours_ reading over material so far to re-familiarise myself with the project
 
-### 11 Jan 2021
+### 11 Jan 2022
 
 - _1 hour_ preparing for supervisor meeting by writing status report
 - _1 hour_ tidying up git repository and adding new notebooks
 - _1 hour_ experimenting with neural reranking
+
+### 12 Jan 2022
+
+- _0.5 hour_ supervisor meeting
+- _0.5 hour_ reviewing meeting and writing up minutes
+- _3 hours_ working on plan for dissertation, identifying gaps in research and plugging them
+
+### 13 Jan 2022
+
+- _3 hours_ Updating the search API to do more preprocessing and be more efficient at the time of searches
