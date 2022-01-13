@@ -6,6 +6,8 @@ import pandas as pd
 
 import json
 import gzip
+import os
+import sys
 
 import pyterrier as pt
 
@@ -49,7 +51,7 @@ print("CSV Created")
 
 # create index
 indexer = pt.DFIndexer(
-    "C:/Users/david/Workspace/level-4-project/API V2/index_docs", overwrite=True
+    os.path.join(sys.path[0], "index_docs"), overwrite=True
 )
 index_ref = indexer.index(
     cc_filtered["title"] + cc_filtered["abstract"], cc_filtered["docno"]

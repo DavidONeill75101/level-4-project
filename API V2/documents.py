@@ -1,5 +1,8 @@
 import pandas as pd
 
+import os
+import sys
+
 import pyterrier as pt
 
 if not pt.started():
@@ -11,7 +14,7 @@ class Documents(object):
 
         # load index - insert any path to data.properties
         index = pt.IndexFactory.of(
-            "C:/Users/david/Workspace/level-4-project/API V2/index_docs/data.properties"
+            os.path.join(sys.path[0], "index_docs/data.properties")
         )
 
         # get tf_idf representation of it
