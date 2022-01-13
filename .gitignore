@@ -6,7 +6,6 @@ index_docs/
 
 *.json.gz
 
-
 # Logs
 logs
 *.log

@@ -14,7 +14,7 @@ if not pt.started():
 
 
 # load latest version of coronacentral
-with gzip.open("dataset/coronacentral.json.gz", "r") as f:
+with gzip.open("coronacentral.json.gz", "r") as f:
     cc = f.read()
 
     json_str = cc.decode("utf-8")
