@@ -54,17 +54,11 @@ Evaluating the Current CoronaCentral Search Tool</br>
 Evaluating with searches with "and"</br>
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1JK_StdUl0XtIJesq0c8gqykspqJlmMEf?usp=sharing)
 
-## Installation
+## Installation and Usage
 
-TBC
+In order to run the IR tool locally, it is best to view it using the provided front-end using the following instructions:
 
-## Usage
-
-TBC
-
-## Automation
-
-TBC
+1. Clone the repository
 
 ## Licence
 

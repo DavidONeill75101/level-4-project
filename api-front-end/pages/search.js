@@ -20,7 +20,7 @@ function Search() {
           <button type="submit" onClick = {handleClick}>Search</button>
           <ul>
             {results.map((result) => (
-              <li>{result.title}</li>
+              <li>{result.docno}</li>
             ))}
           </ul>
       </div>
