@@ -207,3 +207,29 @@
 ### 13 Jan 2022
 
 - _3 hours_ Updating the search API to do more preprocessing and be more efficient at the time of searches
+
+### 14 Jan 2022
+
+- _1.5 hours_ planning my dissertation, establishing areas which require further research.
+- _1.5 hours_ conducting more research, specifically how neural reranking compares to Altmetric reranking
+
+## Week 18
+
+### 17 Jan 2022
+
+- _2 hours_ creating visualisations to illustrate the comparison between my new tool and the old tool
+- _2 hours_ writing requirements chapter for dissertation
+
+### 18 Jan 2022
+
+- _3 hours_ writing design chapter of dissertation.
+
+### 19 Jan 2022
+
+- _0.5 hour_ project meeting
+- _0.5 hour_ writing up minutes and reviewing meeting
+- _3 hours_ performing more experiments, notably on performance metrics and coronabert
+
+### 20 Jan 2022
+
+- _2 hours_ working on query classification with coronabert
