@@ -1,7 +1,6 @@
 __pycache__/
 index_docs/
 
-
 *.csv
 
 *.json.gz
