@@ -233,3 +233,76 @@
 ### 20 Jan 2022
 
 - _2 hours_ working on query classification with coronabert
+
+### 21 Jan 2022
+
+- _0.5 hour_ in a meeting with supervisor reassessing the avenues we wish to explore in the dissertation
+
+## Week 19
+
+### 24 Jan 2022
+
+- _5 hours_ working on baselines for experimental process
+
+### 26 Jan 2022
+
+- _1 hour_ supervisor meeting and writing up minutes
+
+### 27 Jan 2022
+
+- _5 hours_ working on new coronaBERT classification model
+
+### 28 Jan 2022
+
+- _5 hours_ working on coronaBERT reranking strategies and comparing to baseline
+
+## Week 20
+
+### 31 Jan 2022
+
+- _5 hours_ working on CoronaBERT DeepCT
+
+### 2 Feb 2022
+
+- _3 hours_ tuning CoronaBERT classification model
+- _1 hour_ supervisor meeting and writing up minutes
+
+### 3 Feb 2022
+
+- _5 hours_ re-drafting the introduction and background of dissertation to work with new project approach
+
+### 4 Feb 2022
+
+- _2 hours_ re-drafting requirements chapter of dissertation
+
+## Week 21
+
+### 7 Feb 2022
+
+- _3 hours_ redrafting Design chapter of dissertation
+
+### 9 Feb 2022
+
+- _1 hour_ supervisor meeting and writing up minutes
+
+### 10 Feb 2022
+
+- _2 hours_ adapting experiments to make sure they conform with TREC-COVID guidelines
+
+### 11 Feb 2022
+
+- _5 hours_ working through the test data and adjusting my experiments accordingly
+
+### 12 Feb 2022
+
+- _3 hours_ creating Altmetric ranking strategies and evaluating them
+
+## Week 22
+
+### 14 Feb 2022
+
+- _6 hours_ writing the implementation evaluation chapter of dissertation
+
+### 15 Feb 2022
+
+- _6 hours_ writing the evaluation chapter of dissertation - analysis and discussion
