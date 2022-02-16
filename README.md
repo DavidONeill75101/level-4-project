@@ -9,13 +9,21 @@ Secondary Goal - Building an information retrieval system to perform optimally w
 David O'Neill - Student</br>
 Jake Lever - Supervisor
 
-## Design
+## Datasets
 
-## Implementation
+Under the <em>Datasets</em> directory, there is a collection of datasets required for the purpose of the project, in order to make the execution of experiments more efficient. They can be downloaded in the accompanying notebooks.
+
+## Models
+
+Under the <em>Models</em> directory, there is a collection of models created for the project. They are stored in the repo in order to provide quick access to them in the notebooks, instead of requiring to create and train the models each time they are required.
+
+## Notebooks
+
+Under the <em>Notebooks</em> directory, there is a collection of .ipynb notebooks which provide all the practical experiments and analysis carried out for the project, which is detailed extensively in the dissertation. They are ready to run but may take a significant amount of processing time. As such, I would suggest downloading the particular notebook and running it in Google Colab. For the compuatationally intense notebooks, such as those dealing with neural indexing and reranking, I would highly recommend using the Colab GPU to speed up execution.
 
 ## Installation and Usage
 
-In order to run the IR tool locally, it is best to view it using the provided front-end using the following instructions:
+In order to run the CoronaCentral IR tool locally, it is best to view it using the provided front-end using the following instructions:
 
 1. Clone the repository
 

@@ -6,6 +6,8 @@ index_docs/
 
 *.csv
 
+*.json.gz
+
 # Logs
 logs
 *.log
