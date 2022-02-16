@@ -306,3 +306,4 @@
 ### 15 Feb 2022
 
 - _6 hours_ writing the evaluation chapter of dissertation - analysis and discussion
+- _2 hours_ migrating large datasets from google drive to github so anyone can access them in the notebooks

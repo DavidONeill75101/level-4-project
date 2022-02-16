@@ -1,9 +1,10 @@
 __pycache__/
 index_docs/
 
-*.csv
 
-*.json.gz
+
+
+*.csv
 
 # Logs
 logs
