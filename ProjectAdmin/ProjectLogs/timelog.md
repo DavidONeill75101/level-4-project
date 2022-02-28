@@ -307,3 +307,27 @@
 
 - _6 hours_ writing the evaluation chapter of dissertation - analysis and discussion
 - _2 hours_ migrating large datasets from google drive to github so anyone can access them in the notebooks
+
+### 16 Feb 2022
+
+- _3 hours_ working on CoronaCentral search tool
+
+## Week 23
+
+### 21 Feb 2022
+
+- _3 hours_ working on CoronaCentral search API
+
+### 22 Feb 2022
+
+- _4 hours_ reading over first draft of dissertation and making changes
+
+### 25 Feb 2022
+
+- _1 hour_ attending meeting and writing up minutes
+
+## Week 24
+
+### 28 Feb 2022
+
+- _2 hours_ writing dissertation conclusion
