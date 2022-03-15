@@ -331,3 +331,21 @@
 ### 28 Feb 2022
 
 - _2 hours_ writing dissertation conclusion
+
+### 2 Mar 2022
+
+- _3 hours_ reading through entire dissertation, making changes and identifying areas of improvement
+
+### 4 Mar 2022
+
+- _1 hour_ for supervisor meeting and writing up the minutes
+
+## Week 25
+
+### 7 Mar 2022
+
+- _4 hours_ planning and writing presentation
+
+### 8 Mar 2022
+
+- _2 hours_ continuing to write presentation
