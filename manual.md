@@ -42,13 +42,13 @@ In order to run the CoronaCentral search API locally, it is best to view it usin
    pip install -r requirements.txt
    ```
 
-5. Run the file <em>indexing.py</em> which will automatically index the CoronaCentral dataset and also create a .csv file for easy access to the altmetric scores. This execution should take around 5 minutes (depending on the machine) and is very computationally intensive.
+5. Run the file <em>indexing.py</em> which will automatically retrieve the documents from the CoronaCentral dataset and perform the necessary preprocessing. There will be warnings which can be ignored.
 
    ```console
    python indexing.py
    ```
 
-6. Run the file <em>application.py</em> which will start running the RESTful API for the IR tool. Now API calls can be made directly, returning raw JSON which simply contains a list of the IDs for the documents retrieved.
+6. Run the file <em>application.py</em> which will start running the RESTful API for the IR tool. Now API calls can be made directly, returning raw JSON which simply contains a list of the IDs for the documents retrieved. There will be warnings which can be ignored.
 
    ```console
    python application.py
@@ -69,4 +69,4 @@ In order to run the CoronaCentral search API locally, it is best to view it usin
 
    http://127.0.0.1:3000
 
-10. Use the search bar to receive a list of the returned documents for your query.
+10. Use the search bar to receive a list of the returned documents for your query. It is possible that if a query returns no documents an error will occur.

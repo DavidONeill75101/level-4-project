@@ -8,6 +8,7 @@ import json
 import gzip
 import os
 import sys
+import wget
 
 import pyterrier as pt
 
@@ -16,8 +17,12 @@ if not pt.started():
 
 
 # load the coronacentral dataset
-# you must insert the latest version of coronacentral into the API directory and name it coronacentral.json.gz
-with gzip.open("coronacentral.json.gz", "r") as f:
+
+url = 'https://github.com/DavidONeill75101/level-4-project/blob/master/Datasets/coronacentral_with_altmetric.json.gz?raw=true'
+filename = wget.download(url)
+
+
+with gzip.open("coronacentral_with_altmetric.json.gz", "r") as f:
     cc = f.read()
 
     json_str = cc.decode("utf-8")
@@ -47,15 +52,3 @@ coronacentral_doc_contents.to_csv(
     "coronacentral.csv", index=False, header=True)
 
 print("Saved documents for later")
-
-# create index
-indexer = pt.DFIndexer(
-    os.path.join(sys.path[0], "index_docs"), overwrite=True
-)
-index_ref = indexer.index(
-    cc_filtered["title"] + '\n' + cc_filtered["abstract"], cc_filtered["docno"]
-)
-index_ref.toString()
-index = pt.IndexFactory.of(index_ref)
-
-print("Created index")
