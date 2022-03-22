@@ -16,7 +16,7 @@ if not pt.started():
 
 
 # load the coronacentral dataset
-# you must insert the latest version of coronacentral into the API V3 directory and name it coronacentral.json.gz
+# you must insert the latest version of coronacentral into the API directory and name it coronacentral.json.gz
 with gzip.open("coronacentral.json.gz", "r") as f:
     cc = f.read()
 
