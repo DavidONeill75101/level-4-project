@@ -4,11 +4,11 @@
 
 ### Document Encoding
 
-The process of encoding documents using BERT based models is time consuming and so I performed these tasks in a series of notebooks and saved the results in the [Datasets](./Datasets/) directory. If you would like to re-run these notebooks, however, they are ready to be executed.
+The process of encoding documents using BERT based models is time consuming and so I performed these tasks in a series of notebooks and saved the results in the [Datasets](./Datasets/) directory. The notebooks have been run and the results are visible but if you would like to re-run them, simply run all the cells. I would advise doing this on a Google Colab GPU as it can be very time consuming and resource intensive.
 
 ### Experiments
 
-As I aimed to make my experiments repeatable, I create a series of Python Notebooks in which they could easily be repeated. To re-run an experiment, simply download the corresponding Notebook, open it in Google Colab and execute all the cells. For the notebooks which make use of neural indexing, neural reranking or natural language processing, I would suggest making use of the Colab GPU.
+As I aimed to make my experiments repeatable, I created a series of Python Notebooks in which they could easily be repeated. To re-run an experiment, simply download the corresponding Notebook, open it in Google Colab and execute all the cells. For the notebooks which make use of neural indexing, neural reranking or natural language processing, I would suggest making use of the Colab GPU.
 
 ### Miscellaneous Analysis
 
