@@ -349,3 +349,45 @@
 ### 8 Mar 2022
 
 - _2 hours_ continuing to write presentation
+
+### 9 Mar 2022
+
+- _1 hour_ for supervisor meeting and writing up the minutes
+
+### 10 Mar 2022
+
+- _3 hours_ reading dissertation all the way through, ensuring that every paragraph has a good topic sentence
+
+### 11 Mar 2022
+
+- _3 hours_ working through the repository, ensuring that all the notebooks can be run correctly and generally tidying it up
+
+## Week 26
+
+### 14 Mar 2022
+
+- _2 hours_ creating manual and README files and ensuring that they provide a comprehensive set of instructions for users
+- _1 hour_ testing that the CoronaCentral search API runs as expected and can be run locally by users
+
+### 15 Mar 2022
+
+- _4 hours_ proof reading through the entire dissertation
+
+### 16 Mar 2022
+
+- _0.5 hour_ supervisor meeting and writing up minutes
+
+### 20 Mar 2022
+
+- _3 hours_ adding some additional sections to the dissertation which were identified during the review process
+
+## Week 27
+
+### 21 Mar 2022
+
+- _2 hours_ more proof reading of the dissertation
+- _3.5 hours_ recording and editing the presentation
+
+### 22 Mar 2022
+
+- _2 hours_ more proof reading

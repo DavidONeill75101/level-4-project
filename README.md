@@ -36,7 +36,3 @@ Under the [API](./API%20V3/) directory, there is a Flask REST API which has been
 ### API Front End
 
 Under the [api-front-end](./api-front-end/) directory, there is a Next JS front end application which can be used to view the results of the CoronaCentral REST API in an easy to read format. Further guidance on how to run the front end application locally can be found in the [manual](./manual.md).
-
-## Licence
-
-TBC
