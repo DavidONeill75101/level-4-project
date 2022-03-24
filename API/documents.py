@@ -24,12 +24,9 @@ class Documents(object):
         print("Index created")
 
         # get tf_idf representation of it
-        self.bm25 = pt.BatchRetrieve(index, wmodel="BM25")
+        self.bm25 = pt.BatchRetrieve(
+            index, wmodel="BM25", metadata=["title", "abstract"])
         print("BM25 retrieval done")
-
-        # load coronacentral docnos and scores
-        self.coronacentral = pd.read_csv('coronacentral.csv')
-        print("Got doc contents")
 
         # get the classification model
         url = 'https://github.com/DavidONeill75101/level-4-project/blob/master/Models/mlpclassifier_coronaBERT.pickle?raw=true'
@@ -69,34 +66,24 @@ class Documents(object):
 
         return embed
 
+    def get_score(self, title, abstract, query):
+        doc = title + "\n" + abstract
+        query_embedding = self.text_to_embed(query)
+        doc_embedding = self.text_to_embed(doc)
+        concat_embedding = np.concatenate([query_embedding, doc_embedding])
+
+        prediction = self.classifier.predict_proba([concat_embedding])[0]
+        score = prediction[1]
+        return score
+
     def get_documents(self, query):
 
+        scorer = pt.apply.doc_score(lambda row: self.get_score(
+            row['title'], row['abstract'], query))
+
         # search for results given the query
-        results = self.bm25(query)
+        pipeline = (self.bm25 % 24) >> scorer
+        results = pipeline.search(query)
+        print(results.columns)
 
-        top_results = results[:24]
-
-        query_embedding = self.text_to_embed(query)
-
-        docnos = top_results['docno']
-
-        doc_embeddings = []
-        for docno in docnos:
-            doc_content = self.coronacentral[self.coronacentral['docno']
-                                             == docno].iloc[0]['text']
-            doc_embeddings.append(self.text_to_embed(doc_content))
-
-        overall_embeddings = [np.concatenate(
-            [query_embedding, doc_embedding]) for doc_embedding in doc_embeddings]
-
-        predictions = self.classifier.predict_proba(overall_embeddings)
-        scores = [prediction[1] for prediction in predictions]
-
-        docno_scores = [[docno, score] for docno, score in zip(docnos, scores)]
-
-        reranked = pd.DataFrame(docno_scores, columns=['docno', 'score']).sort_values(
-            by='score', ascending=False)
-        reranked['rank'] = list(range(len(docno_scores)))
-        reranked['qid'] = [str(query) for i in range(len(docno_scores))]
-
-        return reranked.to_dict("records")
+        return results.to_dict("records")

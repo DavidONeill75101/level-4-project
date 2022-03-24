@@ -42,13 +42,15 @@ cc_filtered = coronacentral[coronacentral["response"] == True]
 
 print("Filtered by Altmetric")
 
-# store the contents of the documents so they can be reranked by classifier score
-coronacentral_doc_contents = cc_filtered[['docno', 'title', 'abstract']]
-coronacentral_doc_contents['text'] = coronacentral_doc_contents['title'] + \
-    '\n' + coronacentral_doc_contents['abstract']
-coronacentral_doc_contents = coronacentral_doc_contents.drop(
-    columns=['title', 'abstract'])
-coronacentral_doc_contents.to_csv(
-    "coronacentral.csv", index=False, header=True)
 
-print("Saved documents for later")
+indexer = pt.DFIndexer(
+    os.path.join(sys.path[0], "index_docs"), overwrite=True
+)
+index_ref = indexer.index(
+    cc_filtered["title"] + '\n' +
+    cc_filtered["abstract"], cc_filtered["docno"], cc_filtered['title'], cc_filtered['abstract']
+)
+index_ref.toString()
+index = pt.IndexFactory.of(index_ref)
+
+print("Created index")
