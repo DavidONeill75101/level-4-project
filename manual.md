@@ -69,4 +69,4 @@ In order to run the CoronaCentral search API locally, it is best to view it usin
 
    http://127.0.0.1:3000
 
-10. Use the search bar to receive a list of the returned documents for your query. It is possible that if a query returns no documents an error will occur.
+10. Use the search bar to receive a list of the returned documents for your query.
