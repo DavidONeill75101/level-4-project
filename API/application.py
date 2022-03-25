@@ -1,5 +1,5 @@
 '''
-Boots up instantaneously
+Takes a few seconds to boot up due to the fact that it has to retrieve the MLP classification model
 '''
 
 from flask import Flask, render_template
@@ -20,18 +20,16 @@ document_util = Documents()
 @application.route("/search", methods=["GET"])
 @cross_origin()
 def search():
-    """operator query returns json representing operators or an error if unsuccessful
-    optional parameter filterString can be used to pass in id of operator to fetch
-    """
+    """search query returns json respresting the documents or an error if unsuccessful"""
 
     parameters = request.args
 
     if len(parameters) > 1:
         """too many parameters passed in"""
-        return "bad input parameter", 400
+        return "Too many parameters", 400
     elif len(parameters) == 1 and request.args.get("query") is None:
         """name of parameter not query"""
-        return "bad input parameter", 400
+        return "Bad input parameter", 400
     else:
         query = request.args.get("query")
         maybe_documents = document_util.get_documents(query)

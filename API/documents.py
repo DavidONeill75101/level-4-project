@@ -23,7 +23,7 @@ class Documents(object):
         )
         print("Index created")
 
-        # get tf_idf representation of it
+        # get BM25 representation of it, ensuring to get the metadata at the same time
         self.bm25 = pt.BatchRetrieve(
             index, wmodel="BM25", metadata=["title", "abstract"])
         print("BM25 retrieval done")
@@ -33,8 +33,8 @@ class Documents(object):
         filename = wget.download(url)
         self.classifier = pickle.load(open(filename, 'rb'))
         print("got classifier")
-        print(self.classifier)
 
+        # prepare for using CoronaBERT
         self.device = "cuda:0" if torch.cuda.is_available() else "cpu"
         self.tokenizer = AutoTokenizer.from_pretrained("jakelever/coronabert")
         self.model = AutoModelForSequenceClassification.from_pretrained(
@@ -67,23 +67,28 @@ class Documents(object):
         return embed
 
     def get_score(self, title, abstract, query):
+        # concatenate doc title and abstract
         doc = title + "\n" + abstract
+
+        # get embeddings
         query_embedding = self.text_to_embed(query)
         doc_embedding = self.text_to_embed(doc)
         concat_embedding = np.concatenate([query_embedding, doc_embedding])
 
+        # make prediction
         prediction = self.classifier.predict_proba([concat_embedding])[0]
         score = prediction[1]
         return score
 
     def get_documents(self, query):
 
+        # transformer used for reranking by CoronaBERT relevance score
         scorer = pt.apply.doc_score(lambda row: self.get_score(
             row['title'], row['abstract'], query))
 
-        # search for results given the query
+        # create pipeline which performs BM25 retrieval and reranks top 24 docs by CoronaBERT relevance score
         pipeline = (self.bm25 % 24) >> scorer
         results = pipeline.search(query)
-        print(results.columns)
 
+        # return the results as a dictionary for json output
         return results.to_dict("records")

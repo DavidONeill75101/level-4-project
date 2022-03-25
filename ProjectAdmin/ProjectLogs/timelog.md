@@ -391,3 +391,15 @@
 ### 22 Mar 2022
 
 - _2 hours_ more proof reading
+
+### 23 Mar 2022
+
+- _3 hours_ more proof reading
+
+### 24 Mar 2022
+
+- _2 hours_ making some changes to the API as a small bug was noticed
+
+### 25 Mar 2022
+
+- _2 hours_ checking over repository and preparing for submission.

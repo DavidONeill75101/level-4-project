@@ -1,5 +1,5 @@
 '''
-takes ~5 minutes to run this and is very computationally intensive
+takes a few minutes to run this and is very computationally intensive
 '''
 
 import pandas as pd
@@ -42,7 +42,7 @@ cc_filtered = coronacentral[coronacentral["response"] == True]
 
 print("Filtered by Altmetric")
 
-
+# create inverted index which also stores the title and abstract as metadata for reranking
 indexer = pt.DFIndexer(
     os.path.join(sys.path[0], "index_docs"), overwrite=True
 )

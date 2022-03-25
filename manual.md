@@ -22,51 +22,49 @@ There are notebooks which were used to create the CoronaBERT models. They are re
 
 In order to run the CoronaCentral search API locally, it is best to view it using the provided front-end using the following instructions:
 
-1. Clone the repository
+1. Clone the repository. Note that this may take some time due to the very large datasets which are stored in the repository.
 
    ```console
    git clone https://github.com/DavidONeill75101/level-4-project
    ```
 
-2. In the API directory add the latest version of CoronaCentral, named <em>coronacentral.json.gz</em>.
-
-3. Navigate to the API directory
+2. Navigate to the API directory
 
    ```console
    cd API
    ```
 
-4. Create a new Python 3 virtual environment and install all the dependencies via requirements.txt.
+3. Create a new Python 3 virtual environment and install all the dependencies via requirements.txt.
 
    ```console
    pip install -r requirements.txt
    ```
 
-5. Run the file <em>indexing.py</em> which will automatically retrieve the documents from the CoronaCentral dataset and perform the necessary preprocessing. There will be warnings which can be ignored.
+4. Run the file <em>indexing.py</em> which will automatically retrieve the documents from the CoronaCentral dataset and perform the necessary preprocessing. There will be warnings which can be ignored.
 
    ```console
    python indexing.py
    ```
 
-6. Run the file <em>application.py</em> which will start running the RESTful API for the IR tool. Now API calls can be made directly, returning raw JSON which simply contains a list of the IDs for the documents retrieved. There will be warnings which can be ignored.
+5. Run the file <em>application.py</em> which will start running the RESTful API for the IR tool. Now API calls can be made directly, returning raw JSON which simply contains a list of dictionaries representing each of the documents returned. There will be warnings which can be ignored.
 
    ```console
    python application.py
    ```
 
-7. To access this raw JSON, simply access the following URL in a browser:
+6. To access this raw JSON, simply access the following URL in a browser:
 
    http://127.0.0.1:5000/search?query=insert_you_query_here
 
-8. In order to view this in a clearer format, open a new command prompt, ensuring the API is still running. Navigate to the directory <em>api-front-end</em> and run the command <em>npm run dev</em>.
+7. In order to view this in a clearer format, open a new command prompt, ensuring the API is still running. Navigate to the directory <em>api-front-end</em> and run the command <em>npm run dev</em>.
 
    ```console
    cd api-front-end
    npm run dev
    ```
 
-9. To access the application, simply access the following URL in a browser:
+8. To access the application, simply access the following URL in a browser:
 
    http://127.0.0.1:3000
 
-10. Use the search bar to receive a list of the returned documents for your query.
+9. Use the search bar to receive a list of the returned documents for your query. Please note that it may take a few seconds to load as the document embeddings are calculated.
